@@ -57,6 +57,7 @@ git push
 
 5) захотелось написать баш скрипт для git add * git commit -m, чтобы был промпт для коммента, а потом он подставился в -m ""
 
+fffffffffff - ttttttt - yyyyyy
 
 
 
