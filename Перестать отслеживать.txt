@@ -15,7 +15,11 @@ git rm -r --cached .idea
 Теперь результат команды git rm нужно зафиксировать коммитом.
 
 git commit -m'removed gitignored files SECOND TIME'
+git commit -m'removed gitignored files Third TIME'
 
 
 ВАЖНО ЧТО НЕ -am
 так как сделало бы сначала git add . и  все испортило
+
+
+fddffdfdf
