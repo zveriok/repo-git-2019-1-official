@@ -32,3 +32,9 @@ https://ru.stackoverflow.com/questions/573888/%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%
 git rm -r --cached .idea
 
 // Вот теперь коммиты не будут включать ./idea
+
+git log
+git log -1 показать последний коммит
+git log -1 показать последний коммит с произведенными изменениями
+
+// и еще строка
