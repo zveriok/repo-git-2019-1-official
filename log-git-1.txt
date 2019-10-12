@@ -38,25 +38,21 @@ Remote repo
 // -------------------------------
 Предыдущие шаги в файле Полный бред.txt
 
-16) git pull https://github.com/zveriok/repo-git-2019-1-official.git master
+git init - я не делал !!!!!!
 
-From https://github.com/zveriok/repo-git-2019-1-official
- * branch            master     -> FETCH_HEAD
-fatal: refusing to merge unrelated histories
+1) git clone https://github.com/zveriok/repo-git-2019-1-official.git
 
+2) git remote -v
 
-17) git push
+origin  https://github.com/zveriok/repo-git-2019-1-official.git (fetch)
+origin  https://github.com/zveriok/repo-git-2019-1-official.git (push)
 
-Теперь легко работает
-
-18) Новый коммит  git commit -am "Можно ли push with shortname"
+3) Как легко и приятно работать если начинать с git clone https://
 
 
-git push shortname  - не работает - вывод
 
-в shortname надо заменить ссылку на https !!!!!!!
 
-Ни одна команда с текущей конфигурацией shortname  не работает
+
 
 
 
