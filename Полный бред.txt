@@ -1,0 +1,129 @@
+// -------------------------------
+Remote repo - брееееееед
+// -------------------------------
+(git remote -v add origin https://gitlab.konstr1.com/dychliv/bdsssm2.git) (Даниил в Куэнке)
+
+Чтобы посмотреть, какому URL соответствует сокращённое имя в Git, можно указать команде опцию -v:
+
+1) git remote -v
+
+origin  https://baumvad@bitbucket.org/baumvad/bdsssm2.git (fetch)
+origin  https://baumvad@bitbucket.org/baumvad/bdsssm2.git (push)
+
+2) Чтобы добавить новый удалённый Git-репозиторий под именем-сокращением, к которому будет проще обращаться, выполните
+git remote add [сокращение] [url]
+
+
+git remote add shortname git@github.com:zveriok/repo-git-2019-1-official.git
+
+3) git remote -v
+Ответ
+shortname       git@github.com:zveriok/repo-git-2019-1-official.git (fetch)
+shortname       git@github.com:zveriok/repo-git-2019-1-official.git (push)
+
+4) git add; git commit -am "After remote repo was configured"
+
+5) git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+6) git push shortname master
+
+Ответ
+
+The authenticity of host 'github.com (140.82.118.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)?
+
+
+7) yes
+
+Permanently added 'github.com,140.82.118.3' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+8) Почему так?
+https://git-scm.com/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8
+
+$ git push origin master
+Эта команда срабатывает только в случае, если вы клонировали с сервера, на котором у вас есть права на запись, и если никто другой с тех пор не выполнял команду push. Если вы и кто-то ещё одновременно клонируете, затем он выполняет команду push, а затем команду push выполняете вы, то ваш push точно будет отклонён. Вам придётся сначала вытянуть (pull) их изменения и объединить с вашими. Только после этого вам будет позволено выполнить push. Смотри главу 3 для более подробного описания, как отправлять (push) данные на удалённый сервер.
+
+9) git pull shortname
+
+Please make sure you have the correct access rights
+and the repository exists.
+MacBook-Pro-Vadim:Git-2019-1-oficial-doc baumvad$ git pull shortname
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+
+10) git fetch shortname
+
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+11) СРАБОТАЛО
+
+git clone https://github.com/zveriok/repo-git-2019-1-official.git
+
+но не то - создалась папка с новым гитом repo-git-2019-1-official
+
+
+12)
+git pull https://github.com/zveriok/repo-git-2019-1-official.git
+
+arning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/zveriok/repo-git-2019-1-official
+ * branch            HEAD       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+
+13) Вывод - раньше именно надо было использовать ссылку через https
+
+ведь git pull shortname - не работало
+
+14) git push https://github.com/zveriok/repo-git-2019-1-official.git
+
+Ответ
+
+fatal: The current branch master has no upstream branch.
+    To push the current branch and set the remote as upstream, use
+
+        git push --set-upstream https://github.com/zveriok/repo-git-2019-1-official.git master
+
+
+15) git push --set-upstream https://github.com/zveriok/repo-git-2019-1-official.git master
+
+Впервые запросился user/password
+
+Username for 'https://github.com': zveriok
+Password for 'https://zveriok@github.com':
+To https://github.com/zveriok/repo-git-2019-1-official.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/zveriok/repo-git-2019-1-official.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+16) git pull https://github.com/zveriok/repo-git-2019-1-official.git master
+
+From https://github.com/zveriok/repo-git-2019-1-official
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
