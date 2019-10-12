@@ -1,5 +1,9 @@
 https://git-scm.com/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git
 
+// -------------------------------
+Config
+// -------------------------------
+
 git config --global user.name "John Doe"
 git config --global user.name "baumvad-global"
 
@@ -9,32 +13,54 @@ git config --global user.email baumvad-my-global@yandex.ru
 git config user.name
 git config user.email
 
-
+// -------------------------------
+Выход
+// -------------------------------
 In either case, typing q should get you out. - Команда выхода
 
 
-//  Тут новая строчка
-//  Тут новая строчка 2222
-//  Тут новая строчка 3333
-// Text in english !!!!!!!
+
+// -------------------------------
+Разница git commit  -a or -am
+// -------------------------------
 
 Важно:
 Добавление параметра -a в команду git commit заставляет Git автоматически индексировать каждый уже отслеживаемый на момент коммита файл, позволяя вам обойтись без git add:
 
 
-// Hey some new text HERE
 
 
-// -------------------------------
-Перестать отслеживать папку или фаил [дубликат]
-// -------------------------------
-https://ru.stackoverflow.com/questions/573888/%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%B0%D0%BF%D0%BA%D1%83-%D0%B8%D0%B7-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-git
-git rm -r --cached .idea
-
-// Вот теперь коммиты не будут включать ./idea
 
 git log
 git log -1 показать последний коммит
 git log -1 показать последний коммит с произведенными изменениями
 
-// и еще строка
+
+
+// -------------------------------
+Remote repo
+// -------------------------------
+(git remote -v add origin https://gitlab.konstr1.com/dychliv/bdsssm2.git) (Даниил в Куэнке)
+
+Чтобы посмотреть, какому URL соответствует сокращённое имя в Git, можно указать команде опцию -v:
+
+1) git remote -v
+
+origin  https://baumvad@bitbucket.org/baumvad/bdsssm2.git (fetch)
+origin  https://baumvad@bitbucket.org/baumvad/bdsssm2.git (push)
+
+2) Чтобы добавить новый удалённый Git-репозиторий под именем-сокращением, к которому будет проще обращаться, выполните
+git remote add [сокращение] [url]
+
+
+git remote add shortname git@github.com:zveriok/repo-git-2019-1-official.git
+
+3) git remote -v
+Ответ
+shortname       git@github.com:zveriok/repo-git-2019-1-official.git (fetch)
+shortname       git@github.com:zveriok/repo-git-2019-1-official.git (push)
+
+4) git add; git commit -am "After remote repo was configured"
+
+git push origin master
+git push
