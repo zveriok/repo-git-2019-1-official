@@ -28,19 +28,28 @@ In either case, typing q should get you out. - Команда выхода
 Добавление параметра -a в команду git commit заставляет Git автоматически индексировать каждый уже отслеживаемый на момент коммита файл, позволяя вам обойтись без git add:
 
 
-
-
-
 git log
 git log -1 показать последний коммит
 git log -1 показать последний коммит с произведенными изменениями
 
 
-
 // -------------------------------
 Remote repo
 // -------------------------------
+Предыдущие шаги в файле Полный бред.txt
 
+16) git pull https://github.com/zveriok/repo-git-2019-1-official.git master
+
+From https://github.com/zveriok/repo-git-2019-1-official
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+
+17) git push
+
+Теперь легко работает
+
+18) Новый коммит и
 
 
 
