@@ -49,7 +49,15 @@ fatal: refusing to merge unrelated histories
 
 Теперь легко работает
 
-18) Новый коммит и
+18) Новый коммит  git commit -am "Можно ли push with shortname"
+
+
+git push shortname  - не работает - вывод
+
+в shortname надо заменить ссылку на https !!!!!!!
+
+Ни одна команда с текущей конфигурацией shortname  не работает
+
 
 
 
