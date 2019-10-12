@@ -49,8 +49,13 @@ origin  https://github.com/zveriok/repo-git-2019-1-official.git (push)
 
 3) Как легко и приятно работать если начинать с git clone https://
 
+git add .
+git commit -am "Как легко и приятно работать если начинать с git clone https"
+git push
 
+4) Надо просимулировать работу двух разработчиков
 
+5) захотелось написать баш скрипт для git add * git commit -m, чтобы был промпт для коммента, а потом он подставился в -m ""
 
 
 
