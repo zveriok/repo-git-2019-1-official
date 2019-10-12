@@ -13,4 +13,6 @@ git config user.email
 In either case, typing q should get you out. - Команда выхода
 
 
+//  Тут новая строчка
+
 
