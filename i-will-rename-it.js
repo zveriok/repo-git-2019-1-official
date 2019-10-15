@@ -1,4 +1,4 @@
-// some content from 1st proger
+// some content from 1st proger - тем временем первый редактирует свою ветку
 
 const a =6
 
