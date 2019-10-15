@@ -22,8 +22,15 @@ git branch -d my_branch_name
 Удаление ветки
 
 
+git checkout 23573853473904831434
+Переход на один из предыдущих коммитов
 
 
+git reset --hard HEAD~2
+Стиреть с лица земли 2 последних коммита и вернуться в состояние до них
+
+git reset --soft HEAD~2
+Стиреть только сообщения о коммитах, а фаилы останутся без изменений
 
 
-
+git push --set-upstream origin <branch-name>
