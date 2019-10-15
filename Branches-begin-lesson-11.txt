@@ -1,0 +1,29 @@
+// -------------------------------
+Branches
+// -------------------------------
+
+
+git branch
+Gjrfpfnm dtnrb (* показывает на какой я ветке сейчас)
+
+
+git branch my_branch_name
+Создание ветки
+
+
+git checkout my_branch_name
+Переход на ветку
+
+git checkout -b my_branch_name
+Создать ветку и перейти на нее в одну команду
+
+
+git branch -d my_branch_name
+Удаление ветки
+
+
+
+
+
+
+

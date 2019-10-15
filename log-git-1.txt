@@ -58,7 +58,11 @@ git push
 5) захотелось написать баш скрипт для git add * git commit -m, чтобы был промпт для коммента, а потом он подставился в -m ""
 
 fffffffffff - ttttttt - yyyyyy
+---------------------------
+---------------------------
+---------------------------
 
+<<<<<<< HEAD
 короче если я работаю один и в начале делел clone то никакими путями не получается сделать git puul
 Ответ всегда  - Already up to date.
 
@@ -84,7 +88,30 @@ Aborting
 
 
 
+=======
+А вот это написал ВТОРОЙ ПРОГРАММИСТ !!!!!!
+>>>>>>> 0851816cd2fd158060aec8f4aaa64b52aee29d4d
+
+
+1) Автоматом добавились строки  в этот фаил при попытке слияния
+
+2) в консоли выдали
+
+Removing my-first-file.txt
+Auto-merging log-git-1.txt
+CONFLICT (content): Merge conflict in log-git-1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+3) Видимо надо как-то делать merge
 
 
 
 
+git status
+
+Ответ
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   log-git-1.txt
