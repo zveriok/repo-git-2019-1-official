@@ -34,3 +34,8 @@ git reset --soft HEAD~2
 
 
 git push --set-upstream origin <branch-name>
+
+// -------------------------------
+Практика
+// -------------------------------
+git branch branch_of_secong_programmer_Vasia
