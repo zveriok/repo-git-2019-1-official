@@ -4,7 +4,7 @@ Branches
 
 
 git branch
-Gjrfpfnm dtnrb (* показывает на какой я ветке сейчас)
+Показать ветки (* показывает на какой я ветке сейчас)
 
 
 git branch my_branch_name
