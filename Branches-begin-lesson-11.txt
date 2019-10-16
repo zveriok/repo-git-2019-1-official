@@ -34,3 +34,26 @@ git reset --soft HEAD~2
 
 
 git push --set-upstream origin <branch-name>
+
+// -------------------------------
+Практика 2-го прогера
+// -------------------------------
+git branch branch_of_secong_programmer_Vasia
+
+
+
+// -------------------------------
+Практика 1-го прогера
+// ---------------------------------
+
+git branch branch_of_First_programmer_Vadim
+git checkout branch_of_First_programmer_Vadim
+git branch
+git add .
+git commit -am "Commit of First programmer to Vadim branch"
+git push (выдаст подсказку)
+git push --set-upstream origin branch_of_First_programmer_Vadim
+
+
+
+
