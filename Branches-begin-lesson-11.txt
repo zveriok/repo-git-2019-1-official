@@ -57,3 +57,21 @@ git push --set-upstream origin branch_of_First_programmer_Vadim
 
 
 
+// -------------------------------
+(2-й программист - Vasia ) Забрать слитую в веб интерфейсе версию
+// -------------------------------
+
+Здесь видимо сделал правильнее
+
+git status
+Перейдем на главную ветвь
+  267  git branch
+  268  git checkout master
+  Сбросим изменения и отложим их в какую-то там папку
+  270  git stash
+  Теперь получится переключится на master
+  271  git checkout master
+  272  git branch
+  Теперь получится pull
+  273  git pull
+  274  git status
