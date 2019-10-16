@@ -92,3 +92,46 @@ git status
 
 
 
+
+// -------------------------------
+Вывод
+// -------------------------------
+
+
+1) Если человек после своего последнего коммита не делал никаких изменений, то видимо он легко может сделать git pull
+
+Ответ
+
+###
+MacBook-Pro-Vadim:repo-git-2019-1-official baumvad$ git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/zveriok/repo-git-2019-1-official
+   22a82d1..3cbf8f6  master     -> origin/master
+Updating 22a82d1..3cbf8f6
+Fast-forward
+ Branches-begin-lesson-11.txt | 26 +++++++++++++++++++++++---
+ 1 file changed, 23 insertions(+), 3 deletions(-)
+
+###
+
+2) Если изменения были сделаны  и их надо игнорировать, то нужно
+(Если ты уже на master)
+git stash
+git pull
+
+3) Если хочешь сохранить эти изменениято выводи их в отдельную ветвь, решай конфликты на сайте и потом тяни оттуда
+
+
+4) Всегда можно заново сделать git clone или его аналог
+http://qaru.site/questions/16829/git-undo-all-uncommitted-changes
+
+
+
+
+
+
+
