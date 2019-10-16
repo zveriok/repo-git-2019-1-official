@@ -54,7 +54,21 @@ git commit -am "Commit of First programmer to Vadim branch"
 git push (выдаст подсказку)
 git push --set-upstream origin branch_of_First_programmer_Vadim
 
+// -------------------------------
+(1й программист - Vadim ) Забрать слитую в веб интерфейсе версию
+// -------------------------------
+Так как я сделал какие-то изменения, то git pull мне не дали
 
+http://qaru.site/questions/16829/git-undo-all-uncommitted-changes
+
+git reset
+git checkout .
+git clean -fdx
+
+git pull (сработало, и был promt в vim чтобы назвать коммит, видимо я из него неправильно вышел)
+
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
 
 
 // -------------------------------
@@ -75,3 +89,6 @@ git status
   Теперь получится pull
   273  git pull
   274  git status
+
+
+
