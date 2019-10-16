@@ -137,6 +137,7 @@ http://qaru.site/questions/16829/git-undo-all-uncommitted-changes
 
 
 string1= "Наш царь Мукден,  Наш царь Цусима!"
+string2= "Наш царь кровавое пятно!"
 
 
 
